@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 
 class new_note extends StatefulWidget {
@@ -26,8 +28,10 @@ class _new_noteState extends State<new_note> {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: const Icon(Icons.arrow_back,
-                      color: Color.fromRGBO(254, 222, 63, 1)),
+                  icon: const Icon(
+                    Icons.arrow_back,
+                    color: Color.fromRGBO(254, 222, 63, 1),
+                  ),
                 ),
                 const Text(
                   'Note',
