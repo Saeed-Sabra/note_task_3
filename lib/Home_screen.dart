@@ -12,6 +12,8 @@ class Home_screen extends StatefulWidget {
 class _Home_screenState extends State<Home_screen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: Text('data'),
+    );
   }
 }
