@@ -1,6 +1,8 @@
 // ignore_for_file: camel_case_types, file_names
 
 import 'package:flutter/material.dart';
+import 'package:note_task_3/new_note.dart';
+import 'package:note_task_3/todays.dart';
 
 class Home_screen extends StatefulWidget {
   const Home_screen({super.key});
@@ -67,7 +69,11 @@ class _Home_screenState extends State<Home_screen> {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const Today(),
+                  ));
+                },
                 style: ElevatedButton.styleFrom(
                     elevation: 0,
                     backgroundColor: const Color.fromRGBO(130, 255, 176, 0.73),
@@ -164,7 +170,11 @@ class _Home_screenState extends State<Home_screen> {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color.fromRGBO(254, 222, 63, 1),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => const new_note(),
+          ));
+        },
         tooltip: 'New Note',
         child: const Icon(
           Icons.add,
