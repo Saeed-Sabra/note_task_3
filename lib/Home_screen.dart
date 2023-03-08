@@ -70,7 +70,7 @@ class _Home_screenState extends State<Home_screen> {
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                     elevation: 0,
-                    backgroundColor: Color.fromRGBO(130, 255, 176, 0.73),
+                    backgroundColor: const Color.fromRGBO(130, 255, 176, 0.73),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     )),
@@ -119,7 +119,7 @@ class _Home_screenState extends State<Home_screen> {
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                     elevation: 0,
-                    backgroundColor: Color.fromRGBO(255, 251, 130, 0.73),
+                    backgroundColor: const Color.fromRGBO(255, 251, 130, 0.73),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     )),
