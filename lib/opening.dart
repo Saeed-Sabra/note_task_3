@@ -16,7 +16,7 @@ class _openingState extends State<opening> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => const Home_screen()),

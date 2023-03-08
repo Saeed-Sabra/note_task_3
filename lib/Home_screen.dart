@@ -69,35 +69,92 @@ class _Home_screenState extends State<Home_screen> {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
+                    elevation: 0,
                     backgroundColor: Color.fromRGBO(130, 255, 176, 0.73),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(15),
                     )),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Padding(
-                      padding: EdgeInsets.only(bottom: 3, top: 11),
-                      child: Text(
-                        'Todays grocery list',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Color.fromRGBO(32, 31, 31, 1),
+                child: Row(
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 3, top: 11),
+                          child: Text(
+                            'Todays grocery list',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Color.fromRGBO(32, 31, 31, 1),
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(
-                        bottom: 13,
-                      ),
-                      child: Text(
-                        'June 26, 2022 08:05 PM',
-                        style: TextStyle(
-                          fontSize: 10,
-                          color: Color.fromRGBO(32, 31, 31, 1),
+                        Padding(
+                          padding: EdgeInsets.only(
+                            bottom: 13,
+                          ),
+                          child: Text(
+                            'June 26, 2022 08:05 PM',
+                            style: TextStyle(
+                              fontSize: 10,
+                              color: Color.fromRGBO(32, 31, 31, 1),
+                            ),
+                          ),
                         ),
-                      ),
+                      ],
                     ),
+                    const SizedBox(
+                      width: 50,
+                    )
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                    elevation: 0,
+                    backgroundColor: Color.fromRGBO(255, 251, 130, 0.73),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    )),
+                child: Row(
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 3, top: 11),
+                          child: Text(
+                            'Rich dad Poor dad quotes',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Color.fromRGBO(32, 31, 31, 1),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(
+                            bottom: 13,
+                          ),
+                          child: Text(
+                            'June 22, 2022 05:00 PM',
+                            style: TextStyle(
+                              fontSize: 10,
+                              color: Color.fromRGBO(32, 31, 31, 1),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      width: 50,
+                    )
                   ],
                 ),
               ),
